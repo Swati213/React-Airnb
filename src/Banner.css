@@ -1,0 +1,42 @@
+.banner {
+    background: url("https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 63 vh;
+    position: relative;
+  }
+  .banner__info {
+    background-color: black;
+    color: white;
+    padding-top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    width: 300px;
+  }
+  .banner__search{
+      display: flex;
+      flex-direction: column;
+      /* margin-top: -10px; */
+  }
+  .banner__searchButton{
+      background-color: white !important;
+      font-weight: 900 !important;
+      text-transform: inherit !important;
+      color: #ff7779 !important;
+  }
+  .banner__info > button {
+    background-color: #ff7779;
+    color: white;
+    text-transform: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .banner__info > h5 {
+    margin-top: 10px;
+  }
+  .banner__info > button:hover {
+      background-color: white;
+      color:#ff7779;
+  
+    }
