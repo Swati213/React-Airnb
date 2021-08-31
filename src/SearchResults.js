@@ -2,8 +2,12 @@ import React from "react";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import StarIcon from "@material-ui/icons/Star";
 import Button from "@material-ui/core/Button";
-import "./SearchResults.css"
+import "./SearchResults.css";
+import { useHistory } from "react-router-dom";
+
 const SearchResults = ({ img, loc, title, description, star, url,price,total }) => {
+    const history = useHistory();
+
   return (
     
     <div className="searchResult">
@@ -23,7 +27,7 @@ const SearchResults = ({ img, loc, title, description, star, url,price,total }) 
             <p>
               <strong>{star}</strong>
             </p>
-            <Button variant="contained" color="primary">
+            <Button variant="contained" color="primary" onClick={() => history.push('/search')}>
               <a href={url} className="colortext">Book</a>
             </Button>
           </div>
